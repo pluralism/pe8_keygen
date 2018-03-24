@@ -1,0 +1,7 @@
+C:\Users\andre\Desktop\pe8_keygen\pe8_keygen\bin\Debug\pe8_keygen.exe.config
+C:\Users\andre\Desktop\pe8_keygen\pe8_keygen\bin\Debug\pe8_keygen.exe
+C:\Users\andre\Desktop\pe8_keygen\pe8_keygen\bin\Debug\pe8_keygen.pdb
+C:\Users\andre\Desktop\pe8_keygen\pe8_keygen\obj\Debug\pe8_keygen.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\pe8_keygen\pe8_keygen\obj\Debug\pe8_keygen.exe
+C:\Users\andre\Desktop\pe8_keygen\pe8_keygen\obj\Debug\pe8_keygen.pdb
+C:\Users\andre\Desktop\pe8_keygen\pe8_keygen\obj\Debug\pe8_keygen.csprojResolveAssemblyReference.cache
