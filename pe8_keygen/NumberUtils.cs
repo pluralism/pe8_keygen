@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
 namespace pe8_keygen
 {
@@ -12,7 +8,7 @@ namespace pe8_keygen
 
         public static int GetRandomNumber(int min, int max)
         {
-            return random.Next(2, 10);
+            return random.Next(min, max + 1);
         }
     }
 }
