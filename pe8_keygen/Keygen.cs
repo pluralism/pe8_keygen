@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using System;
 using System.Linq;
 using System.Text;
@@ -36,6 +36,16 @@ namespace pe8_keygen
                                        0x22, 0x03, 0x13, 0x0D, 0x1B, 0x19, 0x12,
                                        0x1D, 0x09, 0x1e, 0x17, 0x04, 0x15, 0x07, 0x01 };
 
+        private byte[] Base24Data = {
+            0x4E, 0x54, 0x39, 0x42,
+            0x56, 0x52, 0x38, 0x43,
+            0x58, 0x37, 0x5A, 0x4C,
+            0x36, 0x4B, 0x59, 0x4A,
+            0x35, 0x45, 0x48, 0x47,
+            0x34, 0x46, 0x44, 0x33,
+            0x53, 0x41, 0x32, 0x50,
+            0x55, 0x57 };
+
         private string codeKey = string.Empty;
 
         private string CryptLoop(string st, string pw)
@@ -48,10 +58,10 @@ namespace pe8_keygen
 
             for(int i = 0; i < st.Length; i++)
             {
-                p = p + 1;
+                p++;
                 p = p > pw.Length ? 1 : p;
                 j = pw[p - 1] | 0x80;
-                n = st.Substring(i)[0];
+                n = st[i];
                 loop = true;
 
                 while(loop)
@@ -229,7 +239,7 @@ namespace pe8_keygen
                 return string.Empty;
             }
 
-            return "NT9BVR8CX7ZL6KYJ5EHG4FD3SA2PUW".Substring(pos, 1);
+            return ((char)Base24Data[pos]).ToString();
         }
 
         private string ConvertToBase29(string val)
@@ -269,7 +279,7 @@ namespace pe8_keygen
                 numStr = val.Substring(i * 9, i * 9 + 9 >= val.Length ? val.Length - i * 9 : 9);
                 zeroNs = string.Empty;
                 
-                while(numStr.Substring(pos, 1) == "0")
+                while(numStr[pos] == '0')
                 {
                     zeroNs += "0";
                     pos++;
